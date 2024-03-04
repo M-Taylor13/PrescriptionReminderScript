@@ -63,7 +63,7 @@ def UpdateMed(index, medList):
                     upd = True
             case "2": 
                 updateRefills = input("Enter new refill amount: ")
-                match = re.search(r'^([1-9]|1[0-9]|20)$', updateRefills)
+                match = re.search(r'^([0-9]|1[0-9]|20)$', updateRefills)
                 if (match):
                     med.refills = updateRefills
                     cls(0.5)
